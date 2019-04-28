@@ -45,7 +45,7 @@ var dashRoutes = [
     rtlName: "لوحة القيادة",
     icon: DashboardIcon,
     component: Dashboard,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     collapse: true,
@@ -53,6 +53,7 @@ var dashRoutes = [
     rtlName: "صفحات",
     icon: Image,
     state: "pageCollapse",
+    invisible: true,
     views: [
       {
         path: "/pricing-page",
@@ -134,6 +135,7 @@ var dashRoutes = [
     rtlName: "المكونات",
     icon: Apps,
     state: "componentsCollapse",
+    invisible: true,
     views: [
       {
         collapse: true,
@@ -225,6 +227,7 @@ var dashRoutes = [
     rtlName: "إستمارات",
     icon: "content_paste",
     state: "formsCollapse",
+    invisible: true,
     views: [
       {
         path: "/regular-forms",
@@ -270,6 +273,7 @@ var dashRoutes = [
     rtlName: "الجداول",
     icon: GridOn,
     state: "tablesCollapse",
+    invisible: true,
     views: [
       {
         path: "/regular-tables",
@@ -306,6 +310,7 @@ var dashRoutes = [
     rtlName: "خرائط",
     icon: Place,
     state: "mapsCollapse",
+    invisible: true,
     views: [
       {
         path: "/google-maps",
@@ -350,6 +355,7 @@ var dashRoutes = [
     rtlName: "الرسوم البيانية",
     icon: Timeline,
     component: Charts,
+    invisible: true,
     layout: "/admin"
   },
   {

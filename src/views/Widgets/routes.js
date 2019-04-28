@@ -13,7 +13,10 @@ export default class ChatBoardRoutes extends Component{
     super();
 
     // Initialize Firebase
-    firebase.initializeApp(config);
+    if (!firebase.apps.length) {
+      firebase.initializeApp(config)
+    }
+    ;
   }
 
   state = {

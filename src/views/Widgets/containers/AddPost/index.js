@@ -20,7 +20,6 @@ class AddPost extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    
     this.props.firebase.ref('posts').push({
       title: this.state.title,
       upvote: 0,
